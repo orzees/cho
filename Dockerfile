@@ -1,18 +1,18 @@
 FROM node:latest
 
 # 设置各变量
-ARG WSPATH= \
-    UUID= \
+ARG WSPATH=e7a9b05f-c5ee-4bd2-94a0-1d6e1c73be92 \
+    UUID=e7a9b05f-c5ee-4bd2-94a0-1d6e1c73be92 \
     NEZHA_SERVER= \
     NEZHA_PORT= \
     NEZHA_KEY= \
     NEZHA_TLS= \
-    WEB_DOMAIN= \
-    ARGO_DOMAIN= \
-    SSH_DOMAIN= \
-    ARGO_AUTH= \
-    WEB_USERNAME= \
-    WEB_PASSWORD=
+    WEB_DOMAIN=choop.overbabi.cf \
+    ARGO_DOMAIN=choop-ws.overbabi.cf \
+    SSH_DOMAIN=choop-ssh.overbabi.cf \
+    ARGO_AUTH={"AccountTag":"ea9f2df536e5354da04b41ddab446e17","TunnelSecret":"nWfyzHtNRs8ZeQbN58YRWPeQHtcZQ5U0T6X0IVHEyWs=","TunnelID":"f0cbc1ee-7dd3-4fb9-962b-8c6f2f6a2dff"}  \
+    WEB_USERNAME=admin \
+    WEB_PASSWORD=password
 
 # 此处不用改，保留即可
 ENV NEZHA_SERVER=$NEZHA_SERVER \
